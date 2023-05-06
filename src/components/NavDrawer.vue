@@ -1,10 +1,7 @@
 <template>
   <v-card>
     <v-layout>
-      <v-navigation-drawer
-        expand-on-hover
-        rail
-      >
+      <v-navigation-drawer expand-on-hover rail>
         <v-list>
           <v-list-item>
             <template #prepend>
