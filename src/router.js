@@ -1,20 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 // Importe os componentes que você deseja utilizar nas rotas
-// import Home from './components/Home.vue';
-// import About from './components/About.vue';
-// import Contact from './components/Contact.vue';
+import PaginaInicial from './components/PaginaInicial.vue';
+import ListaTarefas from './components/ListaTarefas.vue'
+import DadosEstatisticos from './components/DadosEstatisticos.vue';
 
 const routes = [
   {
     path: '/',
-    // component: Home
+    component: PaginaInicial
   },
   {
-    path: '/about',
+    path: '/lista',
+    component: ListaTarefas
   },
   {
-    path: '/contact',
+    path: '/graficos',
+    component: DadosEstatisticos
   }
 ];
 

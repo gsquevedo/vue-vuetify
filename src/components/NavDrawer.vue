@@ -20,8 +20,8 @@
 
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-folder"><router-link to="/">Home</router-link></v-list-item>
-          <v-list-item prepend-icon="mdi-star"><router-link to="/about">Sobre</router-link></v-list-item>
-          <v-list-item prepend-icon="mdi-account-multiple"><router-link to="/contact">Contato</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-star"><router-link to="/lista">Tarefas</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-account-multiple"><router-link to="/graficos">Gráficos</router-link></v-list-item>
         </v-list>
       </v-navigation-drawer>
       <router-view></router-view>
@@ -35,7 +35,7 @@ import image from "../assets/foto.jpeg"
 
 export default {
   name: 'NavDrawer',
-  data() {
+  data: () => {
     return {
       image,
     }

@@ -21,3 +21,8 @@ export default {
   }),
 }
 </script>
+<style>
+.page{
+  margin-left: 100px;
+}
+</style>
