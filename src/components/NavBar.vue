@@ -11,9 +11,12 @@
         outlined
         hide-details
       ></v-text-field>
-      <v-btn icon><v-icon>mdi-calendar</v-icon></v-btn>
-      <v-btn icon><v-icon>mdi-tooltip</v-icon></v-btn>
-      <v-btn icon><v-icon>mdi-bell</v-icon></v-btn>
+      <v-btn icon><router-link class="menu-item" to="/"><v-icon>mdi-home</v-icon></router-link></v-btn>
+      <v-btn icon><router-link class="menu-item" to="/graficos"><v-icon>mdi-chart-pie</v-icon></router-link></v-btn>
+      <v-btn icon><router-link class="menu-item" to="/lista"><v-icon>mdi-view-list</v-icon></router-link></v-btn>
+      <v-btn icon><router-link class="menu-item" to="/chat"><v-icon>mdi-tooltip</v-icon></router-link></v-btn>
+      <v-btn icon><router-link class="menu-item" to="/video"><v-icon>mdi-play-box</v-icon></router-link></v-btn>
+      
       <v-list>
         <v-list-item>
           <template #prepend>
