@@ -1,19 +1,19 @@
 <template>
   <v-app>
     <v-main>
-      <NavDrawer/>
+      <NavMenu/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import NavDrawer from './components/NavDrawer.vue'
+import NavMenu from './components/NavMenu.vue'
 
 export default {
   name: 'App',
 
   components: {
-    NavDrawer,
+    NavMenu,
   },
 
   data: () => ({
@@ -23,6 +23,7 @@ export default {
 </script>
 <style>
 .page{
-  margin-left: 100px;
+  width: 210vh;
+  height: auto;
 }
 </style>
