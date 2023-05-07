@@ -11,12 +11,8 @@
         outlined
         hide-details
       ></v-text-field>
-      <v-btn icon><router-link class="menu-item" to="/"><v-icon>mdi-home</v-icon></router-link></v-btn>
-      <v-btn icon><router-link class="menu-item" to="/graficos"><v-icon>mdi-chart-pie</v-icon></router-link></v-btn>
-      <v-btn icon><router-link class="menu-item" to="/lista"><v-icon>mdi-view-list</v-icon></router-link></v-btn>
-      <v-btn icon><router-link class="menu-item" to="/chat"><v-icon>mdi-tooltip</v-icon></router-link></v-btn>
-      <v-btn icon><router-link class="menu-item" to="/video"><v-icon>mdi-play-box</v-icon></router-link></v-btn>
-      
+      <v-btn icon><v-icon>mdi-tooltip</v-icon></v-btn>
+      <v-btn icon><v-icon>mdi-bell</v-icon></v-btn>
       <v-list>
         <v-list-item>
           <template #prepend>
@@ -34,9 +30,11 @@
     </v-app-bar>
     <v-navigation-drawer v-model="drawer">
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-folder"><router-link class="menu-item" to="/">Home</router-link></v-list-item>
-          <v-list-item prepend-icon="mdi-star"><router-link class="menu-item" to="/lista">Tarefas</router-link></v-list-item>
-          <v-list-item prepend-icon="mdi-account-multiple"><router-link class="menu-item" to="/graficos">Gráficos</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-home"><router-link class="menu-item" to="/">Home</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-view-list"><router-link class="menu-item" to="/lista">Tarefas</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-chart-pie"><router-link class="menu-item" to="/graficos">Gráficos</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-play-box"><router-link class="menu-item" to="/video">Video</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-folder"><router-link class="menu-item" to="/arquivos">Arquivos</router-link></v-list-item>
         </v-list>
     </v-navigation-drawer>
     <router-view></router-view>

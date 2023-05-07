@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import PaginaInicial from './components/PaginaInicial.vue';
 import ListaTarefas from './components/ListaTarefas.vue'
 import DadosEstatisticos from './components/DadosEstatisticos.vue'
-import ChatMessage from './components/ChatMessage.vue'
+import  ArquivoBasicos from './components/ArquivoBasicos.vue'
 import MediaVideo from './components/MediaVideo.vue'
 
 const routes = [
@@ -21,8 +21,8 @@ const routes = [
     component: DadosEstatisticos
   },
   {
-    path: '/chat',
-    component: ChatMessage
+    path: '/arquivos',
+    component: ArquivoBasicos
   },
   {
     path: '/video',

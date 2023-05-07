@@ -23,7 +23,5 @@ export default {
 </script>
 <style>
 .page{
-  width: 210vh;
-  height: auto;
 }
 </style>
