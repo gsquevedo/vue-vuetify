@@ -23,6 +23,10 @@ export default {
 </script>
 <style>
 .page{
-  margin-top: 150px;
+  height: 100vh;
+  width: 210vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
