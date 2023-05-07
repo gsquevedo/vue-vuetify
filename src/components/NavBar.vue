@@ -31,9 +31,9 @@
     </v-app-bar>
     <v-navigation-drawer v-model="drawer">
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-folder"><router-link to="/">Home</router-link></v-list-item>
-          <v-list-item prepend-icon="mdi-star"><router-link to="/lista">Tarefas</router-link></v-list-item>
-          <v-list-item prepend-icon="mdi-account-multiple"><router-link to="/graficos">Gráficos</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-folder"><router-link class="menu-item" to="/">Home</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-star"><router-link class="menu-item" to="/lista">Tarefas</router-link></v-list-item>
+          <v-list-item prepend-icon="mdi-account-multiple"><router-link class="menu-item" to="/graficos">Gráficos</router-link></v-list-item>
         </v-list>
     </v-navigation-drawer>
     <router-view></router-view>
@@ -45,13 +45,29 @@ import image from "../assets/foto.jpeg";
 export default {
     data() {
         return {
-            search: "",
-            image,
-            drawer: false,
+          search: "",
+          image,
+          drawer: false,
         };
     },
     methods: {
     },
 };
 </script>
-  
+
+<style scoped>
+.menu-item {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none; 
+}
+
+.menu-item:hover {
+  background-color: #eee;
+}
+
+</style>
