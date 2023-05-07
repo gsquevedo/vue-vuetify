@@ -23,5 +23,6 @@ export default {
 </script>
 <style>
 .page{
+  margin-top: 150px;
 }
 </style>
