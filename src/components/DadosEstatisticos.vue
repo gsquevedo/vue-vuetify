@@ -1,7 +1,3 @@
 <template>
-    <div class="page">
-    </div>
+    <div></div>
 </template>
-<script>
-
-</script>
